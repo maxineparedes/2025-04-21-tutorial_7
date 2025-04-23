@@ -17,7 +17,7 @@ output/coef.csv output/fig.png: code/04-analyze.R output/model.RDS
 	Rscript code/04-analyze.R --model=output/model.RDS --output_coef=output/coef.csv --output_fig=output/fig.png
 
 docs/index.html: index.qmd output/coef.csv output/fig.png
-	quarto render index.qmd
+	quarto render index.qmd --output-dir docs
 
 report: docs/index.html
 
