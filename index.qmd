@@ -2,7 +2,7 @@
 title: My Awesome Report
 format:
   html:
-    embed-resources: true
+      embed-resources: true
 ---
 
 Here's a report of the titantic data
